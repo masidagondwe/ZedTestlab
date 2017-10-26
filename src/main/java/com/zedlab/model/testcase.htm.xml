@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.zedlab.model"> 
+    <class name="Testcase" table="testcase">
+        <id name="id" column="testcase_id">
+            <generator class="native"/>
+        </id> 
+        <property name="name" column="name" />
+        <property name="objective" column="objective" />
+        <property name="prioritylevel" column="priorityLevel" />
+        <property name="expectedresult" column="expectedResult" />
+        <property name="obtainedresult" column="obtainedResult" />
+        <property name="state" column="state" />
+        
+        
+        <set name="reports" inverse="true" cascade="all">
+            <key column="caseID" not-null="true" />
+            <one-to-many class="Testreport"/>
+        </set>
+        
+        <set name="versions" inverse="true" cascade="all">
+            <key column="testcaseID" not-null="true" />
+            <one-to-many class="Projectversion"/>
+        </set>    
+        
+        <many-to-one name="project" class="Project"
+            column="projectID" not-null="true"/>
+            
+        <many-to-one name="qauser" class="QAUser"
+            column="qauserID" not-null="true"/>  
+            
+        <many-to-one name="feature" class="Feature"
+            column="feature_id" not-null="true"/> 
+                                              
+    </class> 
+</hibernate-mapping>

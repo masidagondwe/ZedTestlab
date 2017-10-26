@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'robotobold';
+    src: url('../fonts/roboto-bold-webfont.eot');
+    src: url('../fonts/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/roboto-bold-webfont.woff') format('woff'), url('../fonts/roboto-bold-webfont.ttf') format('truetype'), url('../fonts/roboto-bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensans-regular-webfont.eot');
+    src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans-regular-webfont.woff') format('woff'), url('../fonts/opensans-regular-webfont.ttf') format('truetype'), url('../fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Open Sans', Helvetica Neue, Sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    text-align: center;
+    overflow-x: hidden ;
+    margin: auto ;
+    background-color: #fff;
+    font-color: #000;
+}
+/*---------------------------------------
+           HEADER           
+-----------------------------------------*/
+
+#home {
+    background: url(../images/main-header.jpg) fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar-customs a {
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.navbar-customs a:hover {
+    background: none;
+    color: #33af9d;
+}
+.myBlock{
+	/* background: #fff;*/
+	margin-left: 140px;
+	width: 100%;
+	height: 90%;
+}
+.nav-button {
+    border: 1px solid #fff;
+}
+
+.nav-contact a {
+    border-right: 2px solid #000;
+}
+
+.nav-icon a {
+    color: #fff;
+    font-size: 15px;
+}
+
+.icon-bar {
+    background: #fff;
+}
+/*------ loki contant ----*/
+
+.loki-welcome-text {
+    margin-top: 245px;
+    margin-bottom: 35px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.loki-title {
+    color: #fff;
+    font-size: 52px;
+    font-weight: bold;
+    margin-bottom: 35px;
+    font-family: 'robotobold';
+}
+
+.loki-tagline {
+    color: #fff;
+    font-size: 20px;
+    font-style: italic;
+    width: 260px;
+    margin: auto;
+    height: 40px;
+    line-height: 40px;
+    background: rgba(0, 0, 0, .8);
+    margin-bottom: 35px;
+}
+
+.button {
+    width: 160px;
+    height: 65px;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 55px;
+    color: #f0f;
+    background: -webkit-linear-gradient(top, #ff5c01, #ff7f00);
+    margin-bottom: 220px;
+}
+/*---------------------------------------
+          SERVICES  : FOOTER        
+-----------------------------------------*/
+
+#twitter {
+    background: #202020;
+}
+
+.social {
+    background: #da720f;
+    width: 210px;
+    height: 180px;
+    line-height: 210px;
+    font-size: 40px;
+    color: #fff;
+}
+
+.social-news {
+    color: #727171;
+    text-align: left;
+    margin-left: 70px;
+    margin-top: 50px;
+}
+
+.message-http {
+    color: #fff;
+}
+
+.date {
+    color: #727171;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+/*-- footer ---*/
+
+.footer {
+    background: #202020;
+}
+
+.logo {
+    margin-top: 95px;
+    margin-bottom: 95px;
+}
+
+.footer-2 h5 {
+    color: #fff;
+    font-style: italic;
+}
+
+.footer-2 p {
+    color: #656262;
+    font-style: italic;
+}
+
+.footer hr {
+    border: 1px solid #656262;
+    margin-top: 95px;
+}
+
+.last-footer {
+    color: #656262;
+    padding-bottom: 30px
+}
+
+.last-footer a {
+    text-decoration: none;
+    color: #da720f;
+}
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.zedlab.model">
+    <class name="Feature" table="feature">
+        <id name="id" column="feature_id">
+            <generator class="native"/>
+        </id>
+        <property name="name" column="name" />
+        <property name="function" column="function" />
+        <property name="type" column="type" />
+         
+        <many-to-one name="project" class="Project"
+            column="project_id" not-null="true"/>
+            
+        <set name="testcases" inverse="true" cascade="all">
+            <key column="feature_id" not-null="true" />
+            <one-to-many class="Testcase"/>
+        </set>   
+    </class> 
+</hibernate-mapping>
